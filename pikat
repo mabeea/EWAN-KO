@@ -1,0 +1,28 @@
+package prelimlabexamactivity1; import java.util.Scanner; public class PrelimLabExamActivity1 {
+    public static void main(String[] args) {
+        double basicSalary, hra, da, ta, others, PF, IT, netSalary;
+        
+        //Scanner class object created
+        Scanner sc = new Scanner(System.in);
+        //taking user input of basic salary
+        System.out.println("Enter basic salary: ");
+        basicSalary = sc.nextDouble();
+        
+        //calculating HRA, DA and PF         hra = basicSalary * 0.03;         da = basicSalary * 0.12;         ta = basicSalary * 0.03;         others = basicSalary * 0.1125;
+        PF = basicSalary * 0.14;
+        IT = basicSalary * 0.15;
+        
+        
+        //Calculating net salary by adding basicSalary, hra, da and deducting PF
+from that
+        netSalary = basicSalary + hra + da + others + ta - (PF + IT);
+        System.out.println("HRA: " + hra);
+        System.out.println("DA: " + da);
+        System.out.println("TA: " + ta);
+        System.out.println("Others: " + others);
+        System.out.print("Tax cuts > ");
+        System.out.println("PF: " + PF);
+        System.out.print("Tax cuts > ");
+        System.out.println("IT: " + IT);
+        System.out.println("net salary: " + netSalary);
+    }
